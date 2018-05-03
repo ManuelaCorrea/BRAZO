@@ -31,25 +31,10 @@ Arriba.attach(pinArriba);
 Abajo.attach(pinAbajo);
 Garra .attach(pinGarra );
 Serial.begin(9600);           // Es la velocidad de los datos en Bits 
-bluetooth.begin(9600);
+
 
 }
 
 void loop()
 {
-  if (bluetooth.available()>=2)        //si el modulo manda un dato es guarado en servopos y servopos1//
-  {
-  unsigned  int movimiento=bluetooth.read();   // Almacenamiento de datos en una variable entera sin signo
-  unsigned int movimiento2=bluetooth.read();
-  unsigned int SERVO=(movimiento2*256)+movimiento; // operacion de los datos obtenidos
-  Serial.println(SERV,
-  SERVO1= map(SERCO1, 1000,1180,O,180);    //Rango  de variación, donde se limita al servo hasta ciertos angulos o valores
-  Base.Write(SERVO1);                                        // 
-  Serial.println("Servo Base on");
-  delay (10);
-  
-  if (SERVO>=1000&&SERVO<1180)   //El valor de SERVO se guarda en la variable SERVO1
-  {
-    int SERVO1= SERVO
-  
-
+}
